@@ -114,7 +114,7 @@ terraform apply
 terraform output server_ip
 ```
 
-8. You can now connect via ssh to your new server using the retrieved <server ip>:
+8. You can now connect via ssh to your new server using the retrieved server IP address:
 ```bash
 ssh -i <~/your/ssh/key/directory> root@<server_ip>
 ```
