@@ -200,7 +200,6 @@ Terraform will list everything it will delete and ask for confirmation before pr
 
 ## Possible improvements
 
-- Add a `terraform.tfvars.example` with placeholder values for documentation
 - Use remote state storage (Terraform Cloud or S3) for team collaboration
 - Extend with additional resources: floating IP, volume, load balancer
 
