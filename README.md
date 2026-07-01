@@ -63,7 +63,7 @@ The stack includes:
 ### Generate a local SSH Key (if you dont already have one)
 
 ```bash
-ssh-keygen -t id_rsa -C "some comment here"
+ssh-keygen -t rsa -C "some comment here"
 ```
 
 ### Generate a Hetzner API Token and set the ssh key (if you haven't already)
@@ -195,7 +195,7 @@ Terraform will list everything it will delete and ask for confirmation before pr
 - Understanding Terraform state and the plan/apply/destroy workflow
 - Separating configuration from secrets using `.tfvars` files
 - SSH key-based authentication
-
+- Managed SSH key duplicate problem using data source
 ---
 
 ## Possible improvements
