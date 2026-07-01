@@ -101,13 +101,13 @@ terraform init
 ```bash
 terraform plan
 ```
-[View successfull plan output example](README_supp/plan_output.txt)
+[View successfull plan output example](docs/plan_output.txt)
 
 6. Apply the configuration:
 ```bash
 terraform apply
 ```
-[View successfull apply output example](README_supp/apply_output.txt)
+[View successfull apply output example](docs/apply_output.txt)
 
 7. Once done, retrieve the server IP from the output:
 ```bash
@@ -118,12 +118,12 @@ terraform output server_ip
 ```bash
 ssh -i <~/your/ssh/key/directory> root@<server_ip>
 ```
-![View successfull ssh login example](README_supp/ssh_output.jpg)
+![View successfull ssh login example](docs/ssh_output.jpg)
 
 ### Hetzner Dashboard
-![Server dashboard](README_supp/dashboard_server.jpg)
-![Network dashboard](README_supp/dashboard_network.png)
-![Firewall dashboard](README_supp/dashboard_firewall.png)
+![Server dashboard](docs/dashboard_server.jpg)
+![Network dashboard](docs/dashboard_network.png)
+![Firewall dashboard](docs/dashboard_firewall.png)
 ---
 
 ## Project Structure
@@ -183,7 +183,7 @@ terraform destroy
 ```
 
 Terraform will list everything it will delete and ask for confirmation before proceeding.
-[View successfull destroy output example](README_supp/destroy_output.txt)
+[View successfull destroy output example](docs/destroy_output.txt)
 
 ---
 
