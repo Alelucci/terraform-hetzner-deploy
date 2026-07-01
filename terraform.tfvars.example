@@ -1,0 +1,10 @@
+hcloud_token = "my_hetzner_token"
+server_name = "hetzner-server"
+server_type = "cx22"
+location = "nbg1"
+image = "ubuntu-24.04"
+net_name = "my_network"
+subnet_zone = "eu-central"
+fw_name = "my_firewall"
+fw_allowed_in_tcp_ports = ["22", "80"]
+sshkey_name = "my_ssh_key"
