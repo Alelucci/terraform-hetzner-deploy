@@ -156,7 +156,7 @@ Default values are defined in `variables.tf` and can be overridden in `terraform
 | `subnet_zone` | `eu-central` | Subnet location |
 | `fw_name` | `my_firewall` | Name of the firewall |
 | `fw_allowed_in_tcp_ports` | `"22", "80"` | List of allowed inbound TCP ports |
-| `ssh_public_key_path` | `~/.ssh/id_rsa.pub` | Path to the SSH public key file |
+| `sshkey_name` | `/` | Name of the ssh key used on your Hetzner project |
 
 ---
 
