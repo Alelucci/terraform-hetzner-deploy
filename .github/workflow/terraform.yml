@@ -1,0 +1,35 @@
+name: Terraform Check workflow
+
+env:
+  TF_VAR_hcloud_token: ${{ secrets.HCLOUD_TOKEN }}
+
+on:                    # quando si attiva
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  Total Check:            # un job è un insieme di step
+    runs-on: ubuntu-latest    # sistema operativo del runner
+
+    steps:
+      - name: Code Checkout
+        uses: actions/checkout@v4  # action predefinita
+      
+      - name: Terraform Setup
+        run: hashicorp/setup-terraform@v3     # comando diretto
+
+      - name: Terraform Initialize
+        run: terraform init     #
+      
+      - name: Terraform Format
+        run: terraform fmt -check    #
+      
+      - name: Terraform Validate
+        run: terraform validate    #
+      
+      - name: Terraform Plan
+        run: terraform plan
+      
+      
