@@ -196,6 +196,8 @@ Terraform will list everything it will delete and ask for confirmation before pr
 - Separating configuration from secrets using `.tfvars` files
 - SSH key-based authentication
 - Managed SSH key duplicate problem using data source
+- GitHub Actions CI pipeline
+
 ---
 
 ## Possible improvements
