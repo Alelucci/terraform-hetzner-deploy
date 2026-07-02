@@ -16,8 +16,8 @@ data "hcloud_ssh_key" "default" {
 }
 
 resource "hcloud_network" "network1" {
-    name     = var.net_name
-    ip_range = "10.0.1.0/24"
+  name     = var.net_name
+  ip_range = "10.0.1.0/24"
 }
 
 resource "hcloud_network_subnet" "subnet1" {
@@ -51,12 +51,12 @@ resource "hcloud_firewall" "firewall1" {
 }
 
 resource "hcloud_server" "web1" {
-  name          = var.server_name
-  server_type   = var.server_type
-  image         = var.image
-  location      = var.location
-  ssh_keys      = [data.hcloud_ssh_key.default.id]
-  firewall_ids  = [hcloud_firewall.firewall1.id]
+  name         = var.server_name
+  server_type  = var.server_type
+  image        = var.image
+  location     = var.location
+  ssh_keys     = [data.hcloud_ssh_key.default.id]
+  firewall_ids = [hcloud_firewall.firewall1.id]
 
   network {
     subnet_id = hcloud_network_subnet.subnet1.id
