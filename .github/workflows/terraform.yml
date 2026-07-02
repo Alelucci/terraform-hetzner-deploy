@@ -10,7 +10,7 @@ on:                    # quando si attiva
     branches: [main]
 
 jobs:
-  Total Check:            # un job è un insieme di step
+  Total_Check:            # un job è un insieme di step
     runs-on: ubuntu-latest    # sistema operativo del runner
 
     steps:
