@@ -2,6 +2,7 @@ name: Terraform Check workflow
 
 env:
   TF_VAR_hcloud_token: ${{ secrets.HCLOUD_TOKEN }}
+  TF_VAR_sshkey_name: ${{ secrets.SSHKEY_NAME }}
 
 on:                    # quando si attiva
   push:
