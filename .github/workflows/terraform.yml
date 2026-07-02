@@ -15,10 +15,10 @@ jobs:
 
     steps:
       - name: Code Checkout
-        uses: actions/checkout@v4  # action predefinita
+        uses: actions/checkout@v4.2.2  # action predefinita
       
       - name: Terraform Setup
-        run: hashicorp/setup-terraform@v3     # comando diretto
+        run: hashicorp/setup-terraform@v3.1.2     # comando diretto
 
       - name: Terraform Initialize
         run: terraform init     #
